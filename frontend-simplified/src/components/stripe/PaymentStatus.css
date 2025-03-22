@@ -1,0 +1,137 @@
+.status-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.status-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.status-card h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #32325d;
+}
+
+.status-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.status-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #32325d;
+  font-size: 1.25rem;
+}
+
+.status-item, .balance-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.status-label, .balance-label {
+  color: #6b7c93;
+  font-weight: 500;
+}
+
+.status-value, .balance-value {
+  font-weight: 600;
+}
+
+.status-success {
+  color: #38a169;
+}
+
+.status-pending {
+  color: #dd6b20;
+}
+
+.balance-value.pending {
+  color: #dd6b20;
+}
+
+.requirements-list {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #6b7c93;
+}
+
+.requirement-item {
+  margin-bottom: 0.5rem;
+}
+
+.status-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.status-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.status-button:hover {
+  background-color: #0051a8;
+}
+
+.status-button.secondary {
+  background-color: #718096;
+}
+
+.status-button.secondary:hover {
+  background-color: #4a5568;
+}
+
+.loading-spinner {
+  margin: 2rem auto;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #0070f3;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  text-align: center;
+  color: #6b7c93;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  margin: 1rem 0;
+  padding: 0.75rem;
+  color: #e53e3e;
+  background-color: #fff5f5;
+  border-left: 3px solid #e53e3e;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .status-actions {
+    flex-direction: column;
+  }
+  
+  .status-button {
+    width: 100%;
+  }
+}
